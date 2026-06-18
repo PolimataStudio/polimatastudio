@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Silva – AutorPolímata</title>
+  <meta name="description" content="PWA para autores: livros, eventos e comunidade." />
+  <link rel="canonical" href="https://polimata.com/demos/author/" />
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="css/demo-author.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main id="demo-author">
+    <!-- Hero -->
+    <section id="home" class="demo-hero">
+      <div class="container">
+        <h1>Carlos Silva</h1>
+        <p>Autor | Palestrante | Mentor</p>
+        <a href="#books" class="btn btn-primary">Ver Livros</a>
+      </div>
+    </section>
+
+    <!-- Biografia -->
+    <section id="bio" class="demo-section">
+      <div class="container">
+        <h2>Biografia</h2>
+        <p>Escritor e palestrante com 15 anos de experiência em literatura e desenvolvimento pessoal. Autor de 10 livros best-sellers.</p>
+      </div>
+    </section>
+
+    <!-- Livros -->
+    <section id="books" class="demo-section">
+      <div class="container">
+        <h2>Livros</h2>
+        <div id="books-list" class="demo-grid"></div>
+      </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="events" class="demo-section">
+      <div class="container">
+        <h2>Eventos</h2>
+        <div id="events-list" class="demo-list"></div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="gallery" class="demo-section">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div id="gallery-list" class="demo-grid"></div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="demo-section">
+      <div class="container">
+        <h2>Contato</h2>
+        <div id="contact-info"></div>
+      </div>
+    </section>
+
+  <div class="text-center" style="margin-top: var(--space-4);">
+  <a href="/pages/contato.html" class="btn btn-secondary">Quero uma versão assim</a>
+  </div>
+
+    <!-- CTA Fixo -->
+    <div class="demo-cta-fixed">
+      <a href="/pages/contato.html" class="btn btn-primary">Solicitar uma versão para meu projeto</a>
+    </div>
+  </main>
+
+  <script src="/js/components.js" type="module"></script>
+  <script src="js/demo-author.js" type="module"></script>
+
+<!-- JS para tornar o CTA fixo (já incluso no CSS) -->
+  <script src="/js/app.js" type="module"></script>
+
+<div id="footer-placeholder"></div>
+
+</body>
+</html>

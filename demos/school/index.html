@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <base href="/polimatastudio/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escola Horizonte – EscolaPolímata</title>
+  <meta name="description" content="Plataforma educacional PWA para escolas." />
+  
+  <meta property="og:title" content="EscolaPolímata – Escola Horizonte" />
+  <meta property="og:description" content="Organize matrículas, comunicados e calendário." />
+  
+  <link rel="canonical" href="https://polimata.com/demos/school/" />
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="css/demo-school.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main id="demo-school">
+    <!-- Hero -->
+    <section id="home" class="demo-hero">
+      <div class="container">
+        <h1>Escola Horizonte</h1>
+        <p>Educação com propósito</p>
+        <a href="#calendar" class="btn btn-primary">Ver Calendário</a>
+      </div>
+    </section>
+
+    <!-- Calendário -->
+    <section id="calendar" class="demo-section">
+      <div class="container">
+        <h2>Calendário Escolar</h2>
+        <div id="calendar-list" class="demo-calendar">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Comunicados -->
+    <section id="communications" class="demo-section">
+      <div class="container">
+        <h2>Comunicados</h2>
+        <div id="communications-list" class="demo-list">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="demo-section">
+      <div class="container">
+        <h2>Projetos Pedagógicos</h2>
+        <div id="projects-list" class="demo-grid">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Biblioteca -->
+    <section id="library" class="demo-section">
+      <div class="container">
+        <h2>Biblioteca</h2>
+        <div id="library-list" class="demo-grid">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="gallery" class="demo-section">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div id="gallery-list" class="demo-grid">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="demo-section">
+      <div class="container">
+        <h2>Contato</h2>
+        <div id="contact-info"></div>
+      </div>
+    </section>
+
+    <div class="text-center" style="margin-top: var(--space-4);">
+  <a href="/pages/contato.html" class="btn btn-secondary">Quero uma versão assim</a>
+  </div>
+
+    <!-- CTA Fixo -->
+    <div class="demo-cta-fixed">
+      <a href="/pages/contato.html" class="btn btn-primary">Solicitar uma versão para meu projeto</a>
+    </div>
+  </main>
+
+  <script src="/js/app.js" type="module"></script>
+
+  <script src="/js/components.js" type="module"></script>
+  <script src="js/demo-school.js" type="module"></script>
+
+  <div id="footer-placeholder"></div>
+
+</body>
+</html>

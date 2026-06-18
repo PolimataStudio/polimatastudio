@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <base href="polimatastudio/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Igreja Viva – IgrejaPolímata</title>
+  <meta name="description" content="Aplicativo PWA para igrejas: conecte membros, transmita sermões e gerencie eventos." />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="IgrejaPolímata – Igreja Viva" />
+  <meta property="og:description" content="Solução digital completa para sua igreja." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://polimata.com/demos/church/" />
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "IgrejaPolímata",
+    "description": "Aplicativo PWA para igrejas",
+    "applicationCategory": "Religious",
+    "operatingSystem": "All"
+  }
+  </script>
+  
+  <link rel="canonical" href="https://polimata.com/demos/church/" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/demo-church.css" />
+  
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main id="demo-church">
+    <!-- Hero -->
+    <section id="home" class="demo-hero">
+      <div class="container">
+        <h1>Igreja Viva</h1>
+        <p>Uma comunidade de fé e amor</p>
+        <div class="demo-hero-actions">
+          <a href="#schedule" class="btn btn-primary">Ver Agenda</a>
+          <a href="#contribute" class="btn btn-secondary">Contribuir</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agenda -->
+    <section id="schedule" class="demo-section">
+      <div class="container">
+        <h2>Agenda</h2>
+        <div class="demo-schedule-list" id="schedule-list">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="events" class="demo-section">
+      <div class="container">
+        <h2>Eventos</h2>
+        <div class="demo-grid" id="events-list">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Pedidos de Oração -->
+    <section id="prayer" class="demo-section">
+      <div class="container">
+        <h2>Pedidos de Oração</h2>
+        <form id="prayer-form">
+          <input type="text" id="prayer-name" placeholder="Seu nome" required />
+          <textarea id="prayer-request" placeholder="Seu pedido" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+        </form>
+        <div id="prayer-list">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Estudos Bíblicos -->
+    <section id="bible" class="demo-section">
+      <div class="container">
+        <h2>Estudos Bíblicos</h2>
+        <div class="demo-list" id="bible-list">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Transmissões -->
+    <section id="livestream" class="demo-section">
+      <div class="container">
+        <h2>Transmissões</h2>
+        <div class="demo-livestream">
+          <p>Assista ao vivo no YouTube</p>
+          <a href="#" class="btn btn-outline">Acessar YouTube</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contatos -->
+    <section id="contact" class="demo-section">
+      <div class="container">
+        <h2>Contatos</h2>
+        <div id="contact-info">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Redes Sociais -->
+    <section id="social" class="demo-section">
+      <div class="container">
+        <h2>Redes Sociais</h2>
+        <div class="demo-social-links" id="social-links">
+          <!-- Preenchido via JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Localização -->
+    <section id="location" class="demo-section">
+      <div class="container">
+        <h2>Localização</h2>
+        <div id="location-map">
+          <p>Av. das Igrejas, 1000 – Centro</p>
+          <!-- Placeholder para mapa -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contribuição -->
+    <section id="contribute" class="demo-section">
+      <div class="container">
+        <h2>Contribua</h2>
+        <p>Apoie nossa missão.</p>
+        <button class="btn btn-primary" id="contribute-btn">Fazer Doação (Simulação)</button>
+        <div class="text-center" style="margin-top: var(--space-4);">
+        <a href="pages/contato.html" class="btn btn-secondary">Quero uma versão assim</a>
+      </div>
+    </section>
+
+  <!-- CTA Fixo -->
+    <div class="demo-cta-fixed">
+      <a href="pages/contato.html" class="btn btn-primary">Solicitar uma versão para meu projeto</a>
+    </div>
+  </main>
+
+  <script src="js/components.js" type="module"></script>
+  <script src="js/demo-church.js" type="module"></script>
+
+  <!-- JS para tornar o CTA fixo (já incluso no CSS) -->
+  <script src="js/app.js" type="module"></script>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+</body>
+</html>
